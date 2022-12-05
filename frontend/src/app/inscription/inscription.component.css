@@ -12,7 +12,6 @@
   }
   .bg-img:after{
     position: absolute;
-    content: "prefix";
     top: 0;
     left: 0;
     height: 100%;
