@@ -29,7 +29,7 @@
     padding: 90px 40px;
     width: 370px;
     transform: translate(-50%,-50%);
-    background: rgba(250, 249, 250, 0);
+    background: rgb(128 22 22 / 88%);
     box-shadow: -1px 4px 28px 0px rgba(6, 6, 6, 0.75);
   }
   .content header{
