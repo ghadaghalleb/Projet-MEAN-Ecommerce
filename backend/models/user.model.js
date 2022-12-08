@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
 
 const UserSchema = new mongoose.Schema({
   name: {
@@ -15,6 +17,7 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
+    minlength: [4, 'Password must be atleast 4 character long']
   },
   saltSecret: String
 });
@@ -38,6 +41,19 @@ userSchema.pre('save', function (next) {
       });
   });
 });
+
+// Methods
+userSchema.methods.verifyPassword = function (password) {
+  return bcrypt.compareSync(password, this.password);
+};
+
+userSchema.methods.generateJwt = function () {
+  return jwt.sign({ _id: this._id},
+      process.env.JWT_SECRET,
+  {
+      expiresIn: process.env.JWT_EXP
+  });
+}
 
  mongoose.model("user", UserSchema);
 
