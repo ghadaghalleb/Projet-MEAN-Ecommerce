@@ -5,13 +5,14 @@
     user-select: none;
   }
   .bg-img{
-    background: url("src\assets\bg.png")  ;
+    background: url("src\assets\bg1.png")  ;
     height: 100vh;
     background-size:100%;
     background-position: center;
   }
   .bg-img:after{
-    position: absolute;
+    position: fixed;
+    content: '';
     top: 0;
     left: 0;
     height: 100%;
@@ -27,8 +28,8 @@
     padding: 90px 40px;
     width: 370px;
     transform: translate(-50%,-50%);
-    background: rgba(250, 249, 250, 0);
-    box-shadow: -1px 4px 28px 0px rgba(6, 6, 6, 0.75);
+    background: rgba(90, 13, 13, 0.88);
+    box-shadow: -1px 4px 28px 0px rgba(164, 146, 146, 0.75);
   }
   .content header{
     color: white;
@@ -95,25 +96,7 @@
     transform: translate(-50%, -50%);
   }
   .field input[type="submit"]:hover{
-    background: #c4100d;
+    background: #836161;
   
   }
-  /* .login{
-    color: white;
-    margin: 20px 0;
-    font-family: 'Poppins',sans-serif;
-  }
-  .signup{
-    font-size: 15px;
-    color: white;
-    font-family: 'Poppins',sans-serif;
-  }
-  .signup a{
-    color: #c4100d;
-    text-decoration: none;
-    font-weight: bolder; 
-  }
-  
-  .signup a:hover{
-    text-decoration: underline;
-  } */
+ 
