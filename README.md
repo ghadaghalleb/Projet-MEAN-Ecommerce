@@ -1,16 +1,4 @@
 # Projet-MEAN-Ecommerce
-MeanStack Project
-ghada  
-nour nour t la ! 
-nooo
-
-
-trah khan3awed njareb
-
-wooooww 
-
-trah khan3awed njareb 
-okkkkk
-ok ghaghoud je suis la 
-je ss nour 
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+first step : 
+.....
+ma position c'est de rectifier le ficher shared pour connecter le user avec le backend 
