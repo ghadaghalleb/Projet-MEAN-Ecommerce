@@ -9,6 +9,11 @@ export class RegisterComponent implements OnInit {
 
   constructor() { }
 
+  model={
+    email:'', 
+    password:''
+  }
+
   ngOnInit(): void {
   }
 

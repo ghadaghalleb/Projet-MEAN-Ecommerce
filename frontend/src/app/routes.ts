@@ -1,15 +1,22 @@
 import { Routes } from '@angular/router';
-import { registerModule } from 
-// import { SignUpComponent } from './user/sign-up/sign-up.component';
+import { RegisterComponent } from './register/register.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { MdpComponent } from './mdp/mdp.component';
 
 
 export const appRoutes : Routes = [
     {
-         path:'register',component:UserComponent, 
-         children:[{ path :'' , component:registerModule }]
+         path:'register',component:RegisterComponent, 
+        //  children:[{ path :'' , component:RegisterComponent }]
      },
     // {
     //      path:'', redirectTo : '/register' , pathMatch : 'full' //hedhy trodha automatiquement tjik ll page mtaa ll sign up 
     // }
+    {
+        path:'inscription',component:InscriptionComponent, 
+     },
+     {
+        path:'mdp',component:MdpComponent, 
+     },
 
 ]; 
