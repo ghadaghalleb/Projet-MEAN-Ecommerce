@@ -1,11 +1,22 @@
+
+.navbar-brand {
+  color: white;
+  font-size: 200%;
+}
+
+
+
+
+
+
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    position: relative;
-    margin: 50px auto;
-    text-align: center;
-    font-family: arial;
-    top: 200px;
+  box-shadow: 0 2px 7px #6c5d5d;
+  max-width: 350px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  top: 90px;
   }
   
   .price {
@@ -18,7 +29,7 @@
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: rgba(3, 3, 3, 0.88);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -27,4 +38,16 @@
   
   .card button:hover {
     opacity: 0.7;
+  }
+
+  h1{
+    font-weight: 500;
+      display: block;
+      margin-bottom: 18px;
+      color: #363636;
+    size: 10px;
+  }
+  p {
+      margin-top: 0;
+      margin-bottom: 1rem;
   }

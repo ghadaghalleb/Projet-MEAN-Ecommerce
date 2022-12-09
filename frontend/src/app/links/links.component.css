@@ -13,8 +13,8 @@ body {
 .container {
     width: 1000px;
     position: absolute;
-    top: 100%; 
-    left: 15%; 
+    top: 90%; 
+    left: 20%; 
     display: flex;
     justify-content: space-between;
    
