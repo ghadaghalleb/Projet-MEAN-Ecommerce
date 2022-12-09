@@ -20,7 +20,7 @@
 }
  a {
   /* padding: 0.3em 0; */
-  color: rgba(85, 13, 13, 0.87);
+  color: rgba(90, 13, 13, 0.88);
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -43,7 +43,7 @@
   height: 3px;
   width: 100%;
   content: "";
-  background-color: #ff0101;
+  background-color: #f50a0a;
 }
 .snip1143 a:after {
   padding: 0.3em 0;
@@ -51,7 +51,7 @@
   top: 100%;
   left: 0;
   content: attr(data-hover);
-  color: rgb(127, 13, 13);
+  color: rgb(162, 49, 49);
   white-space: nowrap;
 }
 .snip1143 li:hover a,

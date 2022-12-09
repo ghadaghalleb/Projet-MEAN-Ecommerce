@@ -15,7 +15,7 @@
     bottom: 20px;
     height: 55px;
     width: 55px;
-    background: -webkit-linear-gradient(left, #850101, #700303);
+    background: -webkit-linear-gradient(left, #850101, rgba(90, 13, 13, 0.88));
     text-align: center;
     line-height: 55px;
     border-radius: 50px;
@@ -68,14 +68,14 @@
     padding: 0 20px;
     font-weight: 500;
     font-size: 20px;
-    background: -webkit-linear-gradient(left, #ca0303, #9f1313);
+    background: -webkit-linear-gradient(left, #890909, rgba(90, 13, 13, 0.88));
   }
   .wrapper .chat-box{
     padding: 20px;
     width: 100%;
   }
   .chat-box .desc-text{
-    color: #9f1313;
+    color: #890909;
     text-align: center;
     line-height: 25px;
     font-size: 20px;
@@ -109,7 +109,7 @@
   }
   form .field input:focus,
   form .textarea textarea:focus{
-    border-color: #9f1313;
+    border-color: #890909;
   }
   form .field input::placeholder,
   form .textarea textarea::placeholder{
@@ -138,7 +138,7 @@
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    background: -webkit-linear-gradient(left, #ca0303, #9f1313);
+    background: -webkit-linear-gradient(left, #890909, rgba(90, 13, 13, 0.88));
     transition: all 0.3s ease;
   }
   .chat-box form .field button:active{
