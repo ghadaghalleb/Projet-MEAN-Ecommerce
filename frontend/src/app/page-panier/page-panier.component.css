@@ -1,7 +1,7 @@
 .container
 {
   position: relative;
-    top: 200px;
+    top: 100px;
     width: 100%;
 }
 
@@ -10,7 +10,7 @@
   }
   
   .shopping.cart .product-list .table img {
-    max-width: 70px;
+    max-width: 150px;
     height: auto;
   }
   
@@ -114,4 +114,7 @@
   
   .btn-small {
     padding: 10px 25px;
+    background: #fb5c42;
+    color: #fff !important;
+    border-color: #fb5c42;
   }
