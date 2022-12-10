@@ -13,23 +13,14 @@ router.post('/signup', async(req, res) => {
     }
 })
 // login
- router.get('/login', async(req, res) => {
+ router.post('/login', async(req, res) => {
    const { email, password } = req.body;
    try {
-        const user = await User.findByCredentials({ email, password });
+        const user = await User.find({ email, password });
        res.json(user)
-
     } catch (e) {
         res.status(400).send(e.message)
      }
  })
+
 module.exports = router;
-router.async (req, res, next) => {
-    const { username, password } = req.body
-    // Check if username and password is provided
-    if (!username || !password) {
-      return res.status(400).json({
-        message: "Username or Password not present",
-      })
-    }
-  }

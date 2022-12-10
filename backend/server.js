@@ -12,6 +12,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use(cors());
 app.use('/api/users', userRoutes);
 
+
 //routes products
 
 app.use('/api/products/', require('./routes/productRoutes'))
