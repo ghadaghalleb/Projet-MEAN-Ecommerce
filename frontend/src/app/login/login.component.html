@@ -1,25 +1,33 @@
 <div class="bg-img">
     <div class="content">
-       <header> Connecter Vous ! </header>
-      <form action="#">
+        <header> Connecter Vous ! </header>
+        <h6 style="color: aliceblue;" *ngIf="log">Password Or Email Incorrect</h6>
+      <form  #loginFrom="ngForm" (ngSubmit)="login(loginFrom.value)">
+
+        <div class="field space">
+          <input type="text" name="email" required  #email placeholder=" Votre Email " ngModel>
+        </div>
+
           <div class="field space">
-           <input type="text" required placeholder=" Votre Email ">
-          </div>
-          <div class="field space">
-           <input type="password" class="pass-key" required placeholder="  Mot de passe">
-             <!-- <span class="show"> SHOW </span> -->
-          </div> 
+          <input type="password" name="password" class="pass-key" required  #password placeholder=" Mot de passe" ngModel>
+           </div> 
          <br>
-          <div class="pass">
+
+         <div class="pass">
             <a routerLink="/mdp">Mot de Passe oublié?</a>
          </div>
            <br>
-          <div class="field">
-             <input type="submit" class="center" value="Connexion">
+
+           <div class="field">
+             <input type="submit" [routerLink]="log==false ? ['/home'] : []"  class="center" value="Connexion">
+  
+             
           </div>
+          
           <div class="pass">
             <a routerLink="/home">Annuler</a>
-         </div>
+          </div>
+  
       </form>
              <br> 
         <div class="signup">
@@ -29,7 +37,3 @@
       </div>
  </div>
  
-   <!-- Error message
-   <div class="alert" *ngIf="serverErrorMessages">
-    {{serverErrorMessages}}
-  </div> -->

@@ -16,7 +16,7 @@ export class InscriptionComponent implements OnInit {
   UserCreate(user:  {"name": string,"email": string,"password": string } ) {
    console.log(user)
    this.http.post (environment.apiBaseUrl+'api/users/signup',user).subscribe((res) => {
-   
+    
    });
    }
  
