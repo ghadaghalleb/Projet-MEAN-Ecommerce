@@ -1,25 +1,20 @@
 {
-  "name": "proj",
-  "version": "1.0.0",
-  "description": "ghada project",
-  "main": "server.js",
-  "scripts": {
-    "server": "nodemon server.js",
-    "start": "nodemon server.js"
-  },
-
-
-  
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "config": "^3.3.1",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.12"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+    "name": "backend-gestionprojet",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "mongoose": "^6.5.2",
+        "nodemon": "^2.0.19",
+        "socket.io": "^4.5.1"
+    }
 }

@@ -19,12 +19,14 @@ import { PageAccComponent } from './page-acc/page-acc.component';
 import { PageBouttComponent } from './page-boutt/page-boutt.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
 import { PagePanierComponent } from './page-panier/page-panier.component';
-import { RegisterComponent } from './register/register.component';
-
+// import { RegisterComponent } from './register/register.component';
+import { DashbordAdminComponent } from './dashbord-admin/dashbord-admin.component';
+import { LoginComponent  } from './login/login.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"/home", pathMatch:"full"},
-  {path:"register",component:RegisterComponent},
+  // {path:"register",component:RegisterComponent},
+  {path:"login",component:LoginComponent},
   {path:"mdp",component:MdpComponent},
   {path:"navbar",component:NavbarComponent},
   {path:"inscription",component:InscriptionComponent},
@@ -44,6 +46,7 @@ const routes: Routes = [
   {path:"page-boutt",component:PageBouttComponent},
   {path:"page-acc",component:PageAccComponent},
   {path:"page-panier",component:PagePanierComponent},
+  {path:"dashbord-admin",component:DashbordAdminComponent}
 
 ];
 

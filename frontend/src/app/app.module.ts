@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MdpComponent } from './mdp/mdp.component';
 import { InscriptionComponent } from './inscription/inscription.component';
-import { RegisterComponent } from './register/register.component';
+import { HttpClient } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarousselComponent } from './caroussel/caroussel.component';
 import { HomeComponent } from './home/home.component';
@@ -25,12 +25,15 @@ import { PageAccComponent } from './page-acc/page-acc.component';
 import { PageBouttComponent } from './page-boutt/page-boutt.component';
 import { PagePanierComponent } from './page-panier/page-panier.component';
 
+import { DashbordAdminComponent } from './dashbord-admin/dashbord-admin.component';
+import { LoginComponent } from './login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MdpComponent,
     InscriptionComponent,
-    RegisterComponent,
+
     NavbarComponent,
     CarousselComponent,
     HomeComponent,
@@ -47,13 +50,16 @@ import { PagePanierComponent } from './page-panier/page-panier.component';
     PageContactComponent,
     PageAccComponent,
     PageBouttComponent,
-    PagePanierComponent
+    PagePanierComponent,
+    DashbordAdminComponent,
+    LoginComponent,
   ],
   imports: [
+    HttpClientModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
